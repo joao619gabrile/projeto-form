@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    background-image: url(../imagens/undraw_makeup_artist_rxn8.svg);
+    background-size: cover;
+    background-position: center center;
+    height: 600px;
+    width: 400px;
+    box-shadow: 0px 2px 2px  rgba(0, 0, 0, 0.384);
+    padding: 20px;
+
+    /*Centralização do formulario*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-img{
+    display: none;
+}
+
+.box-form{
+    
+    width: 300px;
+}
+
+.box-form > form{
+    margin: 55px;
+}
+
+.box-form > form > input{
+    border: none;
+    padding: 10px;
+}
+
+
