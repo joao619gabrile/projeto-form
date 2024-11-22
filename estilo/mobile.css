@@ -4,48 +4,90 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-size:62.5% ; /*10px*/
 }
 
 body{
     background-color: white;
-    display: flex;
-    flex-direction: column;
+    width: 100vw;
     height: 100vh;
-    align-items: center;
-    justify-content: center;
+   
+    
+    
 }
 
 main{
-    background-image: url(../imagens/undraw_makeup_artist_rxn8.svg);
-    background-size: cover;
-    background-position: center center;
-    height: 600px;
-    width: 400px;
-    box-shadow: 0px 2px 2px  rgba(0, 0, 0, 0.384);
-    padding: 20px;
 
-    /*Centralização do formulario*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-top: 100px;
+    
+    
+    background-color: rgb(255, 255, 255);
+
+    width: 100%;
+    height: 100%;
+    
+    
 }
 
-.box-img{
-    display: none;
+img{
+    
+    border-radius: 50%;
+    
+    width: 200px;
+    height: 200px;
+
+    display: block;
+    margin: auto;
+    
+    margin-bottom: 20px;
 }
 
 .box-form{
+    border-radius: 100px 0px 0px;
+   
+    background-color: rgb(6, 6, 6);
+    width: 100%;
+    height: 100%;
     
-    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.box-form > form{
-    margin: 55px;
+
+form{
+   
+    padding: 20px;
+    width: 500px;
+    height: 50vh;
+    
 }
 
-.box-form > form > input{
+form > input{
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+
+    font-size: 2rem;
+    
+
+    width: 400px;
+    margin: 15px;
+    padding: 20px;
+    margin: 20px;
+
     border: none;
-    padding: 10px;
+    border-bottom: 2px solid white;
+    outline: none;
+   
+    
 }
+
+#submit{
+    border:2px solid white;
+    margin-top: 40px;
+}
+
+
 
 

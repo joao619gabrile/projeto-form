@@ -3,38 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo/mobile.css" media="all and (min-width:320px) and (max-width:600px)">
-    <link rel="stylesheet" href="estilo/tablet.css" media="screen and (min-width:601px) and (max-width:1020px)">
+    <link rel="stylesheet" href="estilo/mobile.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <title>You Beauty</title>
 </head>
 <body>
 
     <main>
-        <div class="box-img">
-
-        </div>
+        
+        <img src="imagens/user-circle-solid-120.png" alt="">
         <div class="box-form">
+
+            
+
             <form action="cadastro.php" method="post">
+                <input type="email" name="user" id="iuser" placeholder="USUARIO">
+                <input type="password" name="password" id="ipassword" placeholder="SENHA">
 
-                <label for="">Nome</label>
-                <input type="text">
-                <label for="">Sobre Nome</label>
-                <input type="text">
-                <label for="">CPF</label>
-                <input type="number">
-                <label for="">Nome</label>
-                <input type="text">
-                <label for="">Sobre Nome</label>
-                <input type="text">
-                <label for="">CPF</label>
-                <input type="number">
-                <label for="">Nome</label>
-                <input type="text">
-                <label for="">Sobre Nome</label>
-                <input type="text">
-                <label for="">CPF</label>
-                <input type="number">
-
+                <input type="submit" value="ENVIAR" id="submit">
+                
             </form>
         </div>
     </main>
