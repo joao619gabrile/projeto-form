@@ -9,23 +9,35 @@
 </head>
 <body>
 
-    <main>
+    
         
         
         <div class="box-form">
 
             <h1>Cadastro</h1>
 
-            <form action="cadastro.php" method="post">
+            <form action="cadastro.php" method="post" autocomplete="off">
 
-                <input type="email" name="user" id="iuser" placeholder="USUARIO">
-                <input type="password" name="password" id="ipassword" placeholder="SENHA">
+                <label for="iuser">Email</label>
+                <input type="email" name="user" id="iuser" placeholder="EMAIL" required>
+                <label for="ipsw">Senha</label>
+                <input type="password" name="password" id="ipsw" placeholder="SENHA" required>
+                <label for="iname">Nome</label>
+                <input type="text" name="name" id="iname"  placeholder="NOME" required>
+                <label for="isobr">Sobre Nome</label>
+                <input type="text" name="Sobr" id="isobr" placeholder="SOBRENOME" required>
+                <label for="itel">Telefone</label>
+                <input type="text" name="tel" id="itel" placeholder="(xx) xxxxx-xxxx" 
+                 maxlength="15" pattern="^\(\d{2}\)\s\d{5}-\d{4}$"   required>
 
+                <!--patern nao esta funcionando-->
+                
+            
                 <input type="submit" value="ENVIAR" id="submit">
                 
             </form>
         </div>
-    </main>
+    
     
 </body>
 </html>
