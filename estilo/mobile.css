@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+:root{
+
+    --cor001:#2b2b2e;
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -9,81 +14,125 @@
 }
 
 body{
-
-    background-color: white;
     width: 100vw;
     height: 100vh;
+
    
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    
     align-items: center;
+}
+
+header{
+    height: 80px;
+    width: 100%;
+    background-color: var(--cor001);
+    margin-bottom: 40px ;
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    
     
 }
 
+header > .help > a{
+    background-color: #0051ff;
+    height: 6rem;
+    width: 13rem;
+    color: white;
+    
+
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+
+    cursor: pointer;
+
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.4rem;
+
+    transform: translate(-50px, 0px);
+}
+
+.help > a:hover{
+    background-color: #023cb9;
+}
+
+
+
+
+
+.help > a > i{
+    color: #ffffff;
+    font-size: 3rem;
+    
+}
+
+header > p{
+    color: white;
+    
+    font-size: 2rem;
+    margin: 2rem;
+    
+    
+}
+
+header > p > a{
+    text-decoration: none;
+    color: white;
+    
+}
 
 .box-form{
-   
-   
-    background-color: rgb(31, 28, 28);
-   
-    width: 400px;
-    padding: 40px;
-    
+    background-color: #2b2b2e;
+    padding: 10px;
+
+    width: 55vw;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
 
-    border-radius: 120px 0px 0px 0px;
-
+.box-form > i{
+   font-size: 10rem;
+   color: white;
 }
 
 .box-form > h1{
-    font-size: 3.5rem;
+    font-size: 2.5rem;
+    margin: 10px;
     color: white;
 }
 
-
-form{
-   
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-
+.box-form > form{
     
+    width: 250px;
+    
+
+    display: flex;
+    flex-direction: column;
 }
 
-label{
+.box-form > form > input {
+    padding: 10px;
+    margin: 5px;
+    font-size: 1.3rem;
+    outline: none;
+    border: none;
+}
+
+.box-form > form > label{
     display: none;
 }
-
-form > input{
-    background-color: rgba(255, 255, 255, 0);
-    color: white;
-
-    font-size: 1.5rem;
-    
-
-    width: 300px;
-    margin: 15px;
-    padding: 15px;
-    margin: 15px;
-
-    border: none;
-    border-bottom: 2px solid white;
-    outline: none;
-   
-    
-}
-
-#submit{
-    border:2px solid white;
-    margin-top: 20px;
-}
-
 
 
 
